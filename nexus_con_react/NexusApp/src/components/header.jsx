@@ -1,4 +1,5 @@
 import Icon from './Icon';
+import './header.css';
 
 export default function Header() {
   return (
@@ -8,7 +9,7 @@ export default function Header() {
         <input type="text" placeholder="Type to search..." />
         <button type="button" className="search-icon"><Icon name="lupa"/></button>
       </div>
-      <button type="button" className="settings-btn"> <Icon name="dotsMain"/></button>
+      <button type="button" className="settings-btn"> <Icon name="dotsMain"/> </button>
     </header>
   );
 }

@@ -1,3 +1,7 @@
+import Icon from './Icon';
+import './CalendarWidget.css';
+
+
 export default function CalendarWidget({ onOpenCalendar }) {
   const days = [
     { day: 'Dl', date: 5, hasEvent: false },
@@ -27,7 +31,8 @@ export default function CalendarWidget({ onOpenCalendar }) {
             </div>
           </div>
         ))}
-        <button className="next-week-btn">›</button>
+        <button type="button" className="settings-btn"> <Icon name="arrow"/> </button>
+        
       </div>
     </div>
   );

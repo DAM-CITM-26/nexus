@@ -1,4 +1,5 @@
 import accessibility from '../assets/icons/accessibility.svg';
+import arrow from '../assets/icons/arrow.svg';
 import bell from '../assets/icons/bell.svg';
 import campanaNo from '../assets/icons/campanaNo.svg';
 import check from '../assets/icons/check.svg';
@@ -24,7 +25,7 @@ const iconsMap = {
   close: close,   crosshair: crosshair,   dotsH: dotsH,   dotsMain: dotsMain,
   edit: edit,   eye: eye,   filtros: filtros,   home: home,    homeBlack: homeBlack,
   location_on: location_on,   lupa: lupa,   plus: plus,   progres: progres,
-  Settings: Settings,   LogoOGR: LogoOGR,   LogoRemakeA: LogoRemakeA,
+  Settings: Settings,   LogoOGR: LogoOGR,   LogoRemakeA: LogoRemakeA,  arrow: arrow,
 };
 
 export default function Icon({ name, size = 24, alt = 'icon', className = '' }) {

@@ -1,0 +1,86 @@
+/* src/pages/NewTaskPage.css */
+.new-task-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #fafafa;
+  padding-bottom: 90px;
+}
+
+.new-task-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 12px 20px;
+}
+
+.save-btn-container {
+  display: flex;
+  justify-content: center;
+  margin: 4px 0;
+}
+
+.save-event-btn {
+  background-color: #fbd39d;
+  color: #222;
+  border: none;
+  border-radius: 999px;
+  padding: 10px 28px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  transition: transform 0.15s ease;
+}
+
+.save-event-btn:active {
+  transform: scale(0.96);
+}
+
+.badges-location-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.location-input-box {
+  width: 110px;
+}
+
+.reminder-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 4px;
+}
+
+/* Distribución horizontal de los diales */
+.date-dial-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-top: 6px;
+}
+
+.time-dial-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+  margin-top: 6px;
+}
+
+.dial-col-month {
+  width: 130px;
+}
+
+.dial-col-medium {
+  width: 78px;
+}
+
+.dial-col-small {
+  width: 58px;
+}

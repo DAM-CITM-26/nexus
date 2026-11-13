@@ -1,0 +1,79 @@
+/* src/components/WheelColumn.css */
+.wheel-wrapper {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  user-select: none;
+}
+
+.wheel-peach {
+  background-color: #fde6c4;
+}
+
+.wheel-gray {
+  background-color: #f2f2f7;
+}
+
+.wheel-highlight-lines {
+  position: absolute;
+  left: 0;
+  right: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.12);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  pointer-events: none;
+  z-index: 2;
+}
+
+.wheel-scroll-area {
+  height: 100%;
+  box-sizing: border-box;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  scrollbar-width: none; /* Oculta scrollbar en Firefox */
+}
+
+.wheel-scroll-area::-webkit-scrollbar {
+  display: none; /* Oculta scrollbar en Chrome/Safari */
+}
+
+.wheel-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  scroll-snap-align: center;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+/* Niveles visuales según cercanía al centro */
+.wheel-item.active {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #1c355e;
+  opacity: 1;
+}
+
+.wheel-gray .wheel-item.active {
+  color: #222222;
+}
+
+.wheel-item.near {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #4a6fa5;
+  opacity: 0.85;
+}
+
+.wheel-gray .wheel-item.near {
+  color: #666666;
+}
+
+.wheel-item.far {
+  font-size: 0.72rem;
+  color: #6b8cae;
+  opacity: 0.55;
+}
+
+.wheel-gray .wheel-item.far {
+  color: #999999;
+}

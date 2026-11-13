@@ -1,0 +1,42 @@
+.home-page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  position: relative;
+  background-color: #fafafa;
+  padding-bottom: 80px; /* Espacio para que el BottomNav no tape el contenido */
+}
+
+.home-content {
+  flex: 1;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.due-today-section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.section-title {
+  font-size: 1.8rem;
+  font-family: serif; /* Ajusta según la fuente de tu Figma */
+  margin: 0;
+}
+
+.divider {
+  border: none;
+  border-top: 2px solid #333;
+  margin: 0 0 10px 0;
+}
+
+.task-list-scroll {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-height: calc(100vh - 350px);
+  overflow-y: auto;
+}

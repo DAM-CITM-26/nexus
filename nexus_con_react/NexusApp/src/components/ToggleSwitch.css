@@ -1,0 +1,45 @@
+/* src/components/ToggleSwitch.css */
+.toggle-wrapper {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.toggle-track {
+  width: 52px;
+  height: 28px;
+  border-radius: 999px;
+  border: 2px solid #757575;
+  background-color: #fcf6ea;
+  padding: 2px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.25s ease, border-color 0.25s ease;
+}
+
+.toggle-track.is-on {
+  background-color: #fbd39d;
+  border-color: #d99b4e;
+}
+
+.toggle-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #6e6e6e;
+  transition: transform 0.25s ease, background-color 0.25s ease;
+}
+
+.toggle-track.is-on .toggle-thumb {
+  transform: translateX(24px);
+  background-color: #2c2c2c;
+}
+
+.toggle-label {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #222;
+}

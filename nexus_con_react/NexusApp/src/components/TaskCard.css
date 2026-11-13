@@ -1,0 +1,7 @@
+.task-card-header .task-card-body .task-card-small {
+    display: flex;
+  flex-direction: row; /* Es la dirección por defecto */
+  align-items: center; /* Alinea los elementos verticalmente al centro */
+  justify-content:center; /* Distribuye el espacio horizontalmente */
+  gap: 12px; /* Espacio uniforme entre cada elemento */
+}

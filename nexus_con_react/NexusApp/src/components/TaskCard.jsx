@@ -1,20 +1,36 @@
+// src/components/TaskCard.jsx
+import StatusBadge from './StatusBadge';
+import PriorityBadge from './PriorityBadge';
 import './TaskCard.css';
 
-export default function TaskCard({ task, onClick }) {
+export default function TaskCard({
+  task,
+  onClickTask,
+  onClick,
+  onChangeStatus,
+  onChangePriority,
+}) {
+  const handleOpen = () => {
+    const callback = onClickTask || onClick;
+    if (callback) callback(task);
+  };
+
   return (
-    <div className="task-card-small" onClick={() => onClick(task)}>
+    <div className="task-card-small" onClick={handleOpen}>
       <div className="task-card-header">
         <h3>{task.title}</h3>
-        <span className={`status-badge status-${task.status}`}>
-          {task.status.replace('_', ' ')}
-        </span>
+        <StatusBadge
+          status={task.status}
+          onChangeStatus={() => onChangeStatus && onChangeStatus(task.id)}
+        />
       </div>
 
       <div className="task-card-body">
         <span className="deadline-box">{task.deadline}</span>
-        <span className={`priority-badge priority-${task.priority}`}>
-          {task.priority}
-        </span>
+        <PriorityBadge
+          priority={task.priority}
+          onChangePriority={() => onChangePriority && onChangePriority(task.id)}
+        />
       </div>
     </div>
   );

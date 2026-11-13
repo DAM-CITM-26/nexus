@@ -1,0 +1,46 @@
+/* src/components/TextInput.css */
+.custom-input {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 12px 14px;
+  font-family: inherit;
+  color: #333;
+  background-color: #ffffff;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.custom-input:focus {
+  border-color: #f8ce97;
+}
+
+.custom-input::placeholder {
+  color: #9e9e9e;
+  font-style: italic;
+}
+
+.input-title {
+  font-size: 1.15rem;
+}
+
+.input-default {
+  font-size: 0.9rem;
+}
+
+.input-pill {
+  background-color: #b5b5b5;
+  color: #222;
+  border: none;
+  border-radius: 8px;
+  padding: 6px 12px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.input-pill::placeholder {
+  color: #333;
+  font-style: normal;
+}

@@ -1,43 +1,93 @@
+// src/components/TaskOverlay.jsx
+import Icon from './Icon';
 import StatusBadge from './StatusBadge';
 import PriorityBadge from './PriorityBadge';
 import './TaskOverlay.css';
 
-export default function TaskOverlay({ task, onClose, onEdit }) {
+export default function TaskOverlay({
+  task,
+  onClose,
+  onEdit,
+  onChangeStatus,
+  onChangePriority,
+}) {
   if (!task) return null;
 
   return (
     <div className="overlay-backdrop" onClick={onClose}>
-      {/* stopPropagation evita que al hacer clic dentro del overlay se cierre */}
       <div className="overlay-card-large" onClick={(e) => e.stopPropagation()}>
-        
+        {/* Cabecera: Título + Botón cerrar */}
         <header className="overlay-header">
-          <h2>{task.title}</h2>
-          <button className="close-icon" onClick={onClose}>✕</button>
+          <h2 className="overlay-title">{task.title}</h2>
+          <button
+            type="button"
+            className="overlay-close-btn"
+            onClick={onClose}
+            aria-label="Cerrar"
+          >
+            <Icon name="close" size={20} />
+          </button>
         </header>
 
+        {/* Badges interactivos de Estado y Prioridad */}
         <div className="overlay-badges">
-          <StatusBadge status={task.status} />
-          <PriorityBadge priority={task.priority} />
+          <StatusBadge
+            status={task.status}
+            onChangeStatus={() => onChangeStatus && onChangeStatus(task.id)}
+          />
+          <PriorityBadge
+            priority={task.priority}
+            onChangePriority={() => onChangePriority && onChangePriority(task.id)}
+          />
         </div>
 
+        {/* Detalles de la tarea */}
         <div className="overlay-details">
-          <p><strong>Hora programada:</strong> {task.eventTime}</p>
-          <p><strong>Ubicación:</strong> {task.location || 'Sin ubicación'}</p>
-          <p><strong>Descripción:</strong> {task.description}</p>
-          <p className="notification-status">
-            {task.hasNotification ? '🔔 Notificación activa' : '🔕 Sin notificación'}
-          </p>
+          <div className="overlay-detail-row">
+            <strong>Fecha y hora:</strong>
+            <span>{task.eventTime || task.deadline}</span>
+          </div>
+
+          <div className="overlay-detail-row">
+            <strong>Ubicación:</strong>
+            <span>{task.location || 'Sin ubicación'}</span>
+          </div>
+
+          <div className="overlay-description-box">
+            <strong>Descripción:</strong>
+            <p>{task.description || 'Sin descripción'}</p>
+          </div>
+
+          {/* Estado del recordatorio con tus iconos bell / campanaNo */}
+          <div className="overlay-reminder-row">
+            <Icon
+              name={task.hasNotification ? 'bell' : 'campanaNo'}
+              size={20}
+              color={task.hasNotification ? '#d99b4e' : '#888888'}
+            />
+            <span>
+              {task.hasNotification
+                ? `Recordatorio activo${
+                    task.reminderConfig
+                      ? ` (${task.reminderConfig.reminderTime} · ${task.reminderConfig.repeat})`
+                      : ''
+                  }`
+                : 'Sin recordatorio'}
+            </span>
+          </div>
         </div>
 
+        {/* Pie con enlace a la página de edición */}
         <footer className="overlay-footer">
-          <button 
-            className="btn-edit" 
-            onClick={() => onEdit(task.id)}
+          <button
+            type="button"
+            className="overlay-edit-btn"
+            onClick={() => onEdit(task)}
           >
-            Editar contenido
+            <Icon name="edit" size={18} />
+            <span>Editar contenido</span>
           </button>
         </footer>
-
       </div>
     </div>
   );

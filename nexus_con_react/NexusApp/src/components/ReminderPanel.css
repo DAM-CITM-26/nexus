@@ -1,0 +1,35 @@
+/* src/components/ReminderPanel.css */
+.reminder-panel {
+  background-color: #fcf6ea;
+  border: 1px solid #f5d6a7;
+  border-radius: 12px;
+  padding: 12px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  animation: fadeIn 0.2s ease-out;
+}
+
+.reminder-field {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.reminder-field select {
+  padding: 6px 10px;
+  border-radius: 8px;
+  border: 1px solid #d8c2a3;
+  background-color: #ffffff;
+  font-size: 0.85rem;
+  color: #222;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-6px); }
+  to { opacity: 1; transform: translateY(0); }
+}

@@ -1,0 +1,36 @@
+.priority-badge {
+  padding: 6px 12px;
+  border-radius: 12px;
+  border: none;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.15s ease, opacity 0.15s ease;
+}
+
+.priority-badge:hover {
+  opacity: 0.9;
+}
+
+.priority-badge:active {
+  transform: scale(0.95);
+}
+
+/* Colores utilizando las variables del index.css con valores de respaldo */
+.priority-importante {
+  background-color: var(--color-priority-importante, #e53935);
+  color: #ffffff;
+}
+
+.priority-no_urgente {
+  background-color: var(--color-priority-no-urgente, #ffb300);
+  color: #1a1a1a;
+}
+
+.priority-descartable {
+  background-color: var(--color-priority-descartable, #9e9e9e);
+  color: #ffffff;
+}

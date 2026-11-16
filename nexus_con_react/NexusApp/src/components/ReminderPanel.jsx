@@ -1,5 +1,5 @@
 // src/components/ReminderPanel.jsx
-import './ReminderPanel.css';
+//import './ReminderPanel.css';
 
 export default function ReminderPanel({
   reminderTime,

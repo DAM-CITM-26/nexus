@@ -1,5 +1,5 @@
 import Icon from './Icon';
-import './BottomNav.css';
+//import './BottomNav.css';
 
 export default function BottomNav({ activeTab, onNavigate }) {
   return (

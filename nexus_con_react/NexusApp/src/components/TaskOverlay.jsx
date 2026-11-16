@@ -2,7 +2,7 @@
 import Icon from './Icon';
 import StatusBadge from './StatusBadge';
 import PriorityBadge from './PriorityBadge';
-import './TaskOverlay.css';
+//import './TaskOverlay.css';
 
 export default function TaskOverlay({
   task,

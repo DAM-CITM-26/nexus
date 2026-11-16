@@ -1,4 +1,4 @@
-import './StatusBadge.css';
+//import './StatusBadge.css';
 
 export default function StatusBadge({ status, onChangeStatus }) {
   // status puede ser: 'hecho' | 'pendiente' | 'en_proceso'

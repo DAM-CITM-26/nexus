@@ -1,4 +1,4 @@
-import './PriorityBadge.css';
+//import './PriorityBadge.css';
 
 export default function PriorityBadge({ priority, onChangePriority }) {
   // Mapeo de claves a texto formateado para la interfaz

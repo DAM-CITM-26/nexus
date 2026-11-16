@@ -1,7 +1,7 @@
 // src/components/TaskCard.jsx
 import StatusBadge from './StatusBadge';
 import PriorityBadge from './PriorityBadge';
-import './TaskCard.css';
+//import './TaskCard.css';
 
 export default function TaskCard({
   task,

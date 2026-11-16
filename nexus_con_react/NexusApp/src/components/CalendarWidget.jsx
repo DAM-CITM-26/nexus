@@ -1,5 +1,5 @@
 import Icon from './Icon';
-import './CalendarWidget.css';
+//import './CalendarWidget.css';
 
 
 export default function CalendarWidget({ onOpenCalendar }) {

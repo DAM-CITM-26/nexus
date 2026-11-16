@@ -1,6 +1,6 @@
 // src/components/WheelColumn.jsx
 import { useEffect, useRef } from 'react';
-import './WheelColumn.css';
+//import './WheelColumn.css';
 
 export default function WheelColumn({
   options,

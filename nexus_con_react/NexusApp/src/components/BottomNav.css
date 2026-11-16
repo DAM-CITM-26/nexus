@@ -1,4 +1,28 @@
 .bottom-nav{
-  background-color: black;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
 }
-.floating-btn-left{}
+.floating-btn-left, .floating-btn-right{
+  background-color: #FFF8E7;
+
+  border: 4px #FFD3A1 solid;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  width: fit-content;
+  height: fit-content;
+  padding-top: 4px;
+}
+.floating-btn-left{
+  border-bottom-right-radius: 15px;
+}
+.floating-btn-right{
+  border-bottom-left-radius: 15px;
+}
+.home-btn{
+  background-color: #eeeded;
+  border: 0px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+
+}

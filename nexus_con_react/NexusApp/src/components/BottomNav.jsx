@@ -22,7 +22,7 @@ export default function BottomNav({ activeTab, onNavigate }) {
 
       {/* Botón flotante a la derecha (Creación) */}
       <button 
-        className="floating-btn right" 
+        className="floating-btn-right" 
         onClick={() => onNavigate('create')}
       >
         <Icon name="plus" />

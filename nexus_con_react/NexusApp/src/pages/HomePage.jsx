@@ -32,7 +32,7 @@ export default function HomePage({
         <CalendarWidget onOpenCalendar={() => onNavigate('calendar')} />
 
         <section className="due-today-section">
-          <h2 className="section-title">Due Today ...</h2>
+          <h2 className="section-title">Para hoy ...</h2>
           <hr className="divider" />
 
           <div className="task-list-scroll">

@@ -21,12 +21,14 @@
   display: flex;
   flex-direction: column;
   gap: 12px;
+  width: 100%;
 }
 
 .section-title {
   font-size: 1.8rem;
   font-family: serif; /* Ajusta según la fuente de tu Figma */
   margin: 0;
+  text-align: center;
 }
 
 .divider {
@@ -36,9 +38,24 @@
 }
 
 .task-list-scroll {
-  display: flex;
-  flex-direction: column;
   gap: 12px;
   max-height: calc(100vh - 350px);
+  height: fit-content;
   overflow-y: auto;
+  background-color: #FFF8E7;
+  padding: 10px;
+  border-radius: 10px;
+}
+.task-card-header, .task-card-body{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  height: fit-content;
+}
+.deadline-box{
+  background-color: white;
+  color: #1672ec;
+  display: flex;
+  align-items: center;
 }

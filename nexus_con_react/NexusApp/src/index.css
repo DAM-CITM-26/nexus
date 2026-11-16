@@ -1,7 +1,17 @@
 /* src/index.css */
 :root {
+  /* Colores de la Marca */
+ /*
+  color-fondo-claro: #ffffff;
+ 
+  color-primario-claro: #fff8e7;
+  color-texto-claro: #000000;
+  color-fondo-oscuro: #2a2a2a;
+  color-primario-oscuro: #343b46;
+  color-texto-oscuro: #ffffff;
+  */
   /* Colores de Estado */
-  --color-status-hecho: #4caf50;
+  --color-status-hecho: #38c32e;
   --color-status-pendiente: #ff9800;
   --color-status-proceso: #2196f3;
 
@@ -14,3 +24,4 @@
   --radius-card: 16px;
   --shadow-card: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
+

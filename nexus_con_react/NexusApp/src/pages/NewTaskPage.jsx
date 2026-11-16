@@ -121,7 +121,7 @@ export default function NewTaskPage({ onNavigate, onAddTask }) {
               variant="pill"
               value={location}
               onChange={setLocation}
-              placeholder="Ubicació"
+              placeholder="Ubicación"
             />
           </div>
         </div>

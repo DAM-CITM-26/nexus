@@ -119,13 +119,20 @@ justify-content: center;
 }
 /*TAREAS---------------------------------------------------------------------*/
 .task-list-scroll {
-  gap: 12px;
+  display:grid;
+  gap: 20px;
+
   max-height: calc(100vh - 350px);
-  height: fit-content;
+  
   overflow-y: auto;
+
+
+}
+.task-card-small{
   background-color: #FFF8E7;
-  padding: 10px;
+    padding: 10px;
   border-radius: 10px;
+  height: fit-content;
 }
 .task-card-header, .task-card-body{
   display: flex;

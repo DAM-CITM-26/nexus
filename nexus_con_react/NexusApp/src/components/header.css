@@ -6,17 +6,29 @@
   justify-content:center; /* Distribuye el espacio horizontalmente */
   gap: 12px; /* Espacio uniforme entre cada elemento */
 }
-
+input[type = 'text']
+{
+  background-color: #eeeded ;
+  border-width: 0px;
+}
 .search-bar{
-border-radius: 41px;
-border-color: #ffd3a1;
-
 background-color: #eeeded ;
 
+border-radius: 41px;
+border: 2px;
+border-color: #ffd3a1;
+border-style: solid;
+
+padding: 5px;
+display: flex;
+justify-content: center;
 }
+
 .search-icon{
-  border: none;
+  background-color: rgba(255, 255, 255, 0);
+  border-width: 0px;
 }
 .settings-btn{
-
+    background-color: rgba(255, 255, 255, 0);
+  border-width: 0px;
 }

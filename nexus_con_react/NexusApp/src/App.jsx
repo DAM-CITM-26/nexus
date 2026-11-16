@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import HomePage from './pages/HomePage';
 import NewTaskPage from './pages/NewTaskPage';
 import EditTaskPage from './pages/EditTaskPage';
+import './App.css';
 
 const INITIAL_TASKS = [
   {

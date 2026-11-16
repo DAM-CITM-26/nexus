@@ -1,11 +1,12 @@
 import Icon from './Icon';
+import './BottomNav.css';
 
 export default function BottomNav({ activeTab, onNavigate }) {
   return (
     <nav className="bottom-nav">
       {/* Botón flotante a la izquierda (Progreso) */}
       <button 
-        className="floating-btn left" 
+        className="floating-btn-left" 
         onClick={() => onNavigate('progress')}
       >
       <Icon name="progres" />

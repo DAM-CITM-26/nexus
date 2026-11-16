@@ -4,6 +4,7 @@ import HomePage from './pages/HomePage';
 import NewTaskPage from './pages/NewTaskPage';
 import EditTaskPage from './pages/EditTaskPage';
 import './App.css';
+import './Estilos.css'
 
 const INITIAL_TASKS = [
   {

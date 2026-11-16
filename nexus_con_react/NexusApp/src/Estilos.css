@@ -1,0 +1,172 @@
+/*HEADER ---------------------------------------------------------------------*/
+.header-container{
+  display: flex;
+  flex-direction: row; /* Es la dirección por defecto */
+  align-items: center; /* Alinea los elementos verticalmente al centro */
+  justify-content:center; /* Distribuye el espacio horizontalmente */
+  gap: 12px; /* Espacio uniforme entre cada elemento */
+}
+input[type = 'text']
+{
+  background-color: #eeeded ;
+  border-width: 0px;
+}
+.search-bar{
+background-color: #eeeded ;
+
+border-radius: 41px;
+border: 2px;
+border-color: #ffd3a1;
+border-style: solid;
+
+padding: 5px;
+display: flex;
+justify-content: center;
+}
+
+.search-icon{
+  background-color: rgba(255, 255, 255, 0);
+  border-width: 0px;
+}
+.settings-btn{
+    background-color: rgba(255, 255, 255, 0);
+  border-width: 0px;
+}
+/*INPUT ---------------------------------------------------------------------*/
+.custom-input { /*cuando se escribe cambia de color*/
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 12px 14px;
+  font-family: inherit;
+  color: #333;
+  background-color: #ffffff;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.custom-input:focus {
+  border-color: #f8ce97;
+}
+
+.custom-input::placeholder {
+  color: #9e9e9e;
+  font-style: italic;
+}
+
+.input-title {
+  font-size: 1.15rem;
+}
+
+.input-default {
+  font-size: 0.9rem;
+}
+
+.input-pill {
+  background-color: #b5b5b5;
+  color: #222;
+  border: none;
+  border-radius: 8px;
+  padding: 6px 12px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.input-pill::placeholder {
+  color: #333;
+  font-style: normal;
+}
+/*HOME PAGE ---------------------------------------------------------------------*/
+.home-page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  position: relative;
+  background-color: #ffffff;
+  padding-bottom: 80px; /* Espacio para que el BottomNav no tape el contenido */
+}
+
+.home-content {
+  flex: 1;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.due-today-section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+}
+
+.section-title {
+  font-size: 1.8rem;
+  font-family: serif; /* Ajusta según la fuente de tu Figma */
+  margin: 0;
+  text-align: center;
+}
+
+.divider {
+  border: none;
+  border-top: 2px solid #333;
+  margin: 0 0 10px 0;
+}
+
+.task-list-scroll {
+  gap: 12px;
+  max-height: calc(100vh - 350px);
+  height: fit-content;
+  overflow-y: auto;
+  background-color: #FFF8E7;
+  padding: 10px;
+  border-radius: 10px;
+}
+.task-card-header, .task-card-body{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  height: fit-content;
+}
+.deadline-box{
+  background-color: white;
+  color: #1672ec;
+  display: flex;
+  align-items: center;
+}
+/*CALENDARIO---------------------------------------------------------------------*/
+.calendar-card{
+  background-color: #FFF8E7;
+  border: 4px #FFD3A1 solid;
+  border-radius: 24px;
+  padding: 10px;
+  min-width: fit-content;
+}
+.calendar-card .days-row{
+  display: flex;
+  flex-direction: row; /* Es la dirección por defecto */
+  align-items: center; /* Alinea los elementos verticalmente al centro */
+  justify-content: space-between; /* Distribuye el espacio horizontalmente */
+  gap: 12px; /* Espacio uniforme entre cada elemento */
+
+}
+.day-column{
+  align-items: center;
+  display: inline-grid;
+  text-align: center;
+}
+.day-circle{
+  background-color: #eeeded;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 30px;
+  min-height: 30px;
+}

@@ -117,7 +117,7 @@ justify-content: center;
   border-top: 2px solid #333;
   margin: 0 0 10px 0;
 }
-
+/*TAREAS---------------------------------------------------------------------*/
 .task-list-scroll {
   gap: 12px;
   max-height: calc(100vh - 350px);
@@ -129,16 +129,23 @@ justify-content: center;
 }
 .task-card-header, .task-card-body{
   display: flex;
+  align-items: center; /* elementos  al centro */
   justify-content: space-between;
   margin-top: 5px;
   margin-bottom: 5px;
   height: fit-content;
 }
+
 .deadline-box{
   background-color: white;
   color: #1672ec;
   display: flex;
   align-items: center;
+  padding: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+  border: 2px #d9d9d9 solid;
+  border-radius: 6px;
 }
 /*CALENDARIO---------------------------------------------------------------------*/
 .calendar-card{
@@ -171,14 +178,7 @@ justify-content: center;
   min-height: 30px;
 }
 
-/*TAREAS---------------------------------------------------------------------*/
-.task-card-header .task-card-body .task-card-small {
-    display: flex;
-  flex-direction: row; 
-  align-items: center; /* elementos  al centro */
-  justify-content:center; /* Distribuye el espacio horizontalmente */
-  gap: 12px; /* Espacio uniforme entre cada elemento */
-}
+
 /*ESTATUS TAREAS---------------------------------------------------------------------*/
 .badge {
   padding: 6px 12px;

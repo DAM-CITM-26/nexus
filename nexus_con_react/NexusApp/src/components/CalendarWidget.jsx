@@ -4,13 +4,13 @@ import Icon from './Icon';
 
 export default function CalendarWidget({ onOpenCalendar }) {
   const days = [
-    { day: 'Dl', date: 5, hasEvent: false },
-    { day: 'Dim', date: 6, hasEvent: true, dotColor: '#00bcd4' },
-    { day: 'Dc', date: 7, hasEvent: true, dotColor: '#4caf50' },
-    { day: 'Dj', date: 8, hasEvent: false },
-    { day: 'Dv', date: 9, hasEvent: false },
-    { day: 'Ds', date: 10, hasEvent: false },
-    { day: 'Dg', date: 11, hasEvent: false },
+    { day: 'Lun', date: 5, hasEvent: false },
+    { day: 'Mar', date: 6, hasEvent: true, dotColor: '#00bcd4' },
+    { day: 'Mie', date: 7, hasEvent: true, dotColor: '#4caf50' },
+    { day: 'Jue', date: 8, hasEvent: false },
+    { day: 'Vie', date: 9, hasEvent: false },
+    { day: 'Sab', date: 10, hasEvent: false },
+    { day: 'Dom', date: 11, hasEvent: false },
   ];
 
   return (

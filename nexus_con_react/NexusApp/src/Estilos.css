@@ -1,15 +1,17 @@
 /*HEADER --------------------------------------------------------------------------------------------*/
 .header-container{
   width: 100%;
-  margin-top: 5%;
+  padding-top: 5%;
+  padding-bottom: 2%;
   display: flex;
   flex-direction: row; /* Es la dirección por defecto */
   align-items: center; /* Alinea los elementos verticalmente al centro */
   justify-content:space-between; /* Distribuye el espacio horizontalmente */
-  background-color: white;
+  
   
   position: fixed;
   top: 0;
+  background-color: white;
 }
 input[type = 'text']
 {
@@ -91,8 +93,8 @@ width: 70%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100vh;
-  
+  height: 85vh;
+  margin-top: 10vh;
   position: relative;
   background-color: #ffffff;
   
@@ -273,7 +275,7 @@ width: 70%;
   border: 0px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-
+  
 }
 
 
@@ -291,6 +293,9 @@ width: 70%;
   flex-direction: column;
   gap: 14px;
   padding: 12px 20px;
+
+  height: 85vh;
+  margin-top: 10vh;
 }
 
 .save-btn-container {

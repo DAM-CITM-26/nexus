@@ -3,13 +3,9 @@ import Icon from './Icon';
 
 
 export default function ConfOverlay({
-  isOpen,
+  
 }) {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const togglePopup = () => {
-    setIsOpen(!isOpen);}
-
+  
   return (
     <div className="overlay-conf" onClick={togglePopup}>
       <div>

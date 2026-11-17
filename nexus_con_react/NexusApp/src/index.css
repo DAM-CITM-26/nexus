@@ -1,15 +1,16 @@
 /* src/index.css */
 :root {
   /* Colores de la Marca */
-  /*
-  color-fondo-claro: #ffffff;
 
-  color-primario-claro: #fff8e7;
-  color-texto-claro: #000000;
-  color-fondo-oscuro: #2a2a2a;
-  color-primario-oscuro: #343b46;
-  color-texto-oscuro: #ffffff;
-  */
+  --color-fondo-claro: var(--color-fondo-claro);
+  --color-primario-claro: #fff8e7;
+  --color-secundario-claro: #ffd3a1;
+  --color-texto-claro: #000000;
+
+  --color-fondo-oscuro: #2a2a2a;
+  --color-primario-oscuro: #343b46;
+  --color-texto-oscuro: var(--color-fondo-claro);
+ 
   /* Colores de Estado */
   --color-status-hecho: #38c32e;
   --color-status-pendiente: #ff9800;

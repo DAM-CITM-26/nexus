@@ -24,7 +24,7 @@ background-color: #eeeded ;
 
 border-radius: 41px;
 border: 2px;
-border-color: #ffd3a1;
+border-color: var(--color-secundario-claro);
 border-style: solid;
 
 padding: 5px;
@@ -52,7 +52,7 @@ width: 70%;
   padding: 12px 14px;
   font-family: inherit;
   color: #333;
-  background-color: #ffffff;
+  background-color: var(--color-fondo-claro);
   outline: none;
   transition: border-color 0.2s;
 }
@@ -97,7 +97,7 @@ width: 70%;
   height: 85vh;
   margin-top: 10vh;
   position: relative;
-  background-color: #ffffff;
+  background-color: var(--color-fondo-claro);
   
 }
 
@@ -138,7 +138,7 @@ width: 70%;
   overflow-y: auto;
 }
 .task-card-small{ /*tarjeta entera*/
-  background-color: #FFF8E7;
+  background-color: var(--color-primario-claro);
   padding: 10px;
   border-radius: 10px;
   height: fit-content;
@@ -164,8 +164,8 @@ width: 70%;
 }
 /*CALENDARIO--------------------------------------------------------------------------------------------*/
 .calendar-card{
-  background-color: #FFF8E7;
-  border: 4px #FFD3A1 solid;
+  background-color: var(--color-primario-claro);
+  border: 4px var(--color-secundario-claro) solid;
   border-radius: 24px;
   padding: 10px;
   min-width: fit-content;
@@ -233,7 +233,7 @@ width: 70%;
 /* Colores utilizando las variables del index.css con valores de respaldo */
 .priority-importante {
   background-color: var(--color-priority-importante, #e53935);
-  color: #ffffff;
+  color: #var(--color-fondo-claro);
 }
 
 .priority-no_urgente {
@@ -243,7 +243,7 @@ width: 70%;
 
 .priority-descartable {
   background-color: var(--color-priority-descartable, #9e9e9e);
-  color: #ffffff;
+  color: var(--color-fondo-claro);
 }
 
 /*BARRA NAVEGACIÓN INFERIOR--------------------------------------------------------------------------------------------*/
@@ -256,9 +256,9 @@ width: 70%;
   bottom: 0;
 }
 .floating-btn-left, .floating-btn-right{
-  background-color: #FFF8E7;
+  background-color: var(--color-primario-claro);
 
-  border: 4px #FFD3A1 solid;
+  border: 4px var(--color-secundario-claro) solid;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   width: fit-content;
@@ -510,7 +510,7 @@ width: 70%;
 }
 
 .overlay-card-large {
-  background-color: #ffffff;
+  background-color: var(--color-fondo-claro);
   width: 100%;
   max-width: 390px;
   border-radius: var(--radius-card, 18px);
@@ -649,7 +649,7 @@ width: 70%;
   padding: 6px 10px;
   border-radius: 8px;
   border: 1px solid #d8c2a3;
-  background-color: #ffffff;
+  background-color: var(--color-fondo-claro);
   font-size: 0.85rem;
   color: #222;
 }

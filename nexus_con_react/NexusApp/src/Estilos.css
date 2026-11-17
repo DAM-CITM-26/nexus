@@ -6,7 +6,10 @@
   flex-direction: row; /* Es la dirección por defecto */
   align-items: center; /* Alinea los elementos verticalmente al centro */
   justify-content:space-between; /* Distribuye el espacio horizontalmente */
- 
+  background-color: white;
+  
+  position: fixed;
+  top: 0;
 }
 input[type = 'text']
 {
@@ -23,7 +26,10 @@ border-style: solid;
 
 padding: 5px;
 display: flex;
-justify-content: center;
+justify-content: space-between;
+
+min-width: fit-content;
+width: 70%;
 }
 
 .search-icon{
@@ -242,6 +248,9 @@ justify-content: center;
   display: flex;
   width: 100%;
   justify-content: space-around;
+  
+  position: fixed;
+  bottom: 0;
 }
 .floating-btn-left, .floating-btn-right{
   background-color: #FFF8E7;

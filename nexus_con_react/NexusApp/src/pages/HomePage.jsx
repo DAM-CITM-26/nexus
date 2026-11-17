@@ -5,7 +5,7 @@ import CalendarWidget from '../components/CalendarWidget';
 import TaskCard from '../components/TaskCard';
 import TaskOverlay from '../components/TaskOverlay';
 import BottomNav from '../components/BottomNav';
-import './HomePage.css';
+//import './HomePage.css';
 
 export default function HomePage({
   tasks,

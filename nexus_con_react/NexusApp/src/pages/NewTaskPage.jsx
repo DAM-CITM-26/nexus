@@ -8,11 +8,11 @@ import PriorityBadge from '../components/PriorityBadge';
 import ToggleSwitch from '../components/ToggleSwitch';
 import ReminderPanel from '../components/ReminderPanel';
 import WheelColumn from '../components/WheelColumn';
-import './NewTaskPage.css';
+//import './NewTaskPage.css';
 
 const MONTHS = [
-  'January', 'February', 'March', 'April', 'May', 'June',
-  'July', 'August', 'September', 'October', 'November', 'December',
+  'Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio',
+  'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre',
 ];
 const DAYS = Array.from({ length: 31 }, (_, i) => String(i + 1));
 const YEARS = ['2024', '2025', '2026', '2027', '2028', '2029', '2030'];
@@ -36,7 +36,7 @@ export default function NewTaskPage({ onNavigate, onAddTask }) {
   const [repeat, setRepeat] = useState('Una sola vez');
 
   // Estados de los diales de Fecha
-  const [month, setMonth] = useState('November');
+  const [month, setMonth] = useState('Noviembre');
   const [day, setDay] = useState('13');
   const [year, setYear] = useState('2026');
 

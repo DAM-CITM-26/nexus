@@ -8,11 +8,11 @@ import PriorityBadge from '../components/PriorityBadge';
 import ToggleSwitch from '../components/ToggleSwitch';
 import ReminderPanel from '../components/ReminderPanel';
 import WheelColumn from '../components/WheelColumn';
-import './NewTaskPage.css';
+//import './NewTaskPage.css';
 
 const MONTHS = [
-  'January', 'February', 'March', 'April', 'May', 'June',
-  'July', 'August', 'September', 'October', 'November', 'December',
+  'Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio',
+  'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre',
 ];
 const DAYS = Array.from({ length: 31 }, (_, i) => String(i + 1));
 const YEARS = ['2024', '2025', '2026', '2027', '2028', '2029', '2030'];
@@ -39,7 +39,7 @@ export default function EditTaskPage({ task, onNavigate, onUpdateTask }) {
   }
 
   const parsedTime = parseDeadline(task.deadline);
-  const initialDate = task.date || { day: '13', month: 'November', year: '2026' };
+  const initialDate = task.date || { day: '13', month: 'Noviembre', year: '2026' };
 
   // Estados precargados con la información de la tarea
   const [title, setTitle] = useState(task.title || '');

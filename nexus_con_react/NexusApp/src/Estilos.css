@@ -233,7 +233,7 @@ width: 70%;
 /* Colores utilizando las variables del index.css con valores de respaldo */
 .priority-importante {
   background-color: var(--color-priority-importante, #e53935);
-  color: #var(--color-fondo-claro);
+  color: var(--color-fondo-claro);
 }
 
 .priority-no_urgente {

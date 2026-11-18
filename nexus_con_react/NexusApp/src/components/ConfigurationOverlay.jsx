@@ -11,12 +11,15 @@ export default function ConfOverlay({
 
   return (
     <div className="overlay-conf">
-      <div>
+      <button className="overlay-row-conf" onClick={onClose}> 
+        <Icon name="close" size={20} />
+      </button>
+      <div className="overlay-row-conf">
         <Icon name="Settings" size={20} />
         <p>Configuración</p>
       </div>
 
-      <div>
+      <div className="overlay-row-conf">
         <Icon name="eye" size={20} />
         <p>Tema Pantalla</p>
       </div>

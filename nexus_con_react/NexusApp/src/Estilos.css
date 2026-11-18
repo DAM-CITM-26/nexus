@@ -509,18 +509,25 @@ width: 70%;
   animation: overlayFadeIn 0.18s ease-out;
 }
 
-.overlay-card-large {
+.overlay-card-large, .overlay-conf {
   background-color: var(--color-fondo-claro);
   width: 100%;
   max-width: 390px;
+  min-width: fit-content;
   border-radius: var(--radius-card, 18px);
   padding: 20px;
   box-shadow: 0 10px 28px rgba(0, 0, 0, 0.18);
   display: flex;
   flex-direction: column;
   gap: 16px;
-}
 
+}
+.overlay-row-conf{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2vw;
+}
 .overlay-header {
   display: flex;
   justify-content: space-between;

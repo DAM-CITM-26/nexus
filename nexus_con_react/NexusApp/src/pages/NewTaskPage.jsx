@@ -67,7 +67,7 @@ export default function NewTaskPage({ onNavigate, onAddTask }) {
     }
 
     const formattedTime = `${hour}:${minute} ${period}`;
-    const newTask = {
+    const newTask = { //guardado local
       id: Date.now().toString(),
       title: title.trim(),
       description: description.trim() || 'Sin descripción',

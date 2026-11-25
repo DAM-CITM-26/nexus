@@ -24,9 +24,21 @@ export default function HomePage({
     onEditTask(task);      // Abre EditTaskPage con esa tarea
   };
 
-    const CurrentDate = () => { //retorna la fecha actual [dia/mes/año]
-    const date = new Date();
-    return <div>{date.toLocaleDateString()}</div>;
+  const CurrentDate = () => { //retorna la fecha actual [dia/mes/año]
+    //const date = new Date();
+    //return date.toLocaleDateString();
+    const date = CurrentDay() + " " + CurrentMonth() + " " + new Date().getFullYear();
+    return date;
+  };
+
+  const CurrentDay = () => {  //solo el dia y en string
+    const dayOfMonth = new Date().getDate(); // Returns 1-31   
+    return dayOfMonth.toString();
+  };
+
+  const CurrentMonth = () => { //nombre del mes en español
+    const currentMonthName = new Intl.DateTimeFormat('es-ES', { month: 'long' }).format(new Date());       
+    return currentMonthName;
   };
 
   return (
@@ -37,15 +49,16 @@ export default function HomePage({
         <CalendarWidget onOpenCalendar={() => onNavigate('calendar')} />
 
         <section className="due-today-section">
-          <h2 className="section-title">Para hoy {CurrentDate()}</h2>
+          <h2 className="section-title">Para hoy: {CurrentDate()}</h2>
           <hr className="divider" />
-
+          <p>{CurrentDay()}</p>
           <div className="task-list-scroll">
-            //ordenar por eventTime
-            <p></p>{CurrentDate()}
             {tasks
-              .filter((task) => task.eventTime === CurrentDate())
-              .sort((a, b) => a.eventTime - b.eventTime)
+              .filter((task) => task.date.day === CurrentDay() 
+              && task.date.month.toLowerCase() === CurrentMonth().toLowerCase()
+              && task.date.year === new Date().getFullYear().toString()
+            )   
+              .sort((a, b) => a.deadline - b.deadline)
               .map((task) => (
                 <TaskCard
                   key={task.id}

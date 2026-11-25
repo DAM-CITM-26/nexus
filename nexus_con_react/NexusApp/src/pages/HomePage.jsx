@@ -24,6 +24,11 @@ export default function HomePage({
     onEditTask(task);      // Abre EditTaskPage con esa tarea
   };
 
+    const CurrentDate = () => { //retorna la fecha actual [dia/mes/año]
+    const date = new Date();
+    return <div>{date.toLocaleDateString()}</div>;
+  };
+
   return (
     <div className="home-page-container">
       <Header />
@@ -32,17 +37,22 @@ export default function HomePage({
         <CalendarWidget onOpenCalendar={() => onNavigate('calendar')} />
 
         <section className="due-today-section">
-          <h2 className="section-title">Para hoy ...</h2>
+          <h2 className="section-title">Para hoy {CurrentDate()}</h2>
           <hr className="divider" />
 
           <div className="task-list-scroll">
-            {tasks.map((task) => (
-              <TaskCard
-                key={task.id}
-                task={task}
-                onClickTask={(t) => setActiveTaskId(t.id)}
-                onChangeStatus={onCycleStatus}
-                onChangePriority={onCyclePriority}
+            //ordenar por eventTime
+            <p></p>{CurrentDate()}
+            {tasks
+              .filter((task) => task.eventTime === CurrentDate())
+              .sort((a, b) => a.eventTime - b.eventTime)
+              .map((task) => (
+                <TaskCard
+                  key={task.id}
+                  task={task}
+                  onClickTask={(t) => setActiveTaskId(t.id)}
+                  onChangeStatus={onCycleStatus}
+                  onChangePriority={onCyclePriority}
               />
             ))}
           </div>

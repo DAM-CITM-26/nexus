@@ -78,6 +78,7 @@ export default function App() {
     );
   };
 
+
   return (
     <main className="app-root">
       {currentPage === 'home' && (
